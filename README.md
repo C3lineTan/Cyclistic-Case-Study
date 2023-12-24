@@ -26,7 +26,13 @@ Until now, Cyclistic’s marketing strategy relied on building general awareness
 
 <a name="prepare"></a>
 ## Prepare
-- Data Source: [Divvy tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) under this [license](https://divvybikes.com/data-license-agreement)
+- Data Source: [Divvy tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) under this [license](https://divvybikes.com/data-license-agreement). The data used follows the ROCCC approach:
+  - Reliable: Data is complete and accurate from Divvy, a bicycle sharing system in the Chicago metropolitan area
+  - Original: Data is made available by Motivate, a company based in New York City that used to operate Divvy in Chicago
+  - Comprehensive: Data is appropriate and sufficient to answer the business question
+  - Current: Last year's data is used and data is updated monthly
+  - Cited: Data is made available by Motivate International Inc. under this [license](https://divvybikes.com/data-license-agreement)
+- Limitation: Due to data-privacy issues, the use of riders’ personally identifiable information is prohibited. This means that we cannot connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes
 - Data Range: Jan 20222 to Dec 2022 (12 files with naming convention of YYYYMM-divvy-tripdata and each file includes information for one month)
 - Columns in each file: ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, and member_casual
 - [Data Preparation](https://github.com/C3lineTan/Cyclistic-Case-Study/blob/main/Data%20Preparation): 12 csv files obtained from Divvy tripdata are uploaded as tables in the '2022' dataset and combined into 1 table, 'tripdata_2022', in the '2022' dataset, and cleaned using BigQuery due to BigQuery's ability to handle large amounts of data
@@ -35,14 +41,14 @@ Until now, Cyclistic’s marketing strategy relied on building general awareness
 ## Process
 SQL Query: [Data Cleaning](https://github.com/C3lineTan/Cyclistic-Case-Study/blob/main/Data%20Cleaning)
 
-- 5,667,717 rows found
-- Check data type of all columns
+- 5,667,717 rows found initially in the 'tripdata_2022' table
+- Checked data type of all columns to ensure they are correct
 - No duplicates found
 - Null values found in start_station_name, start_station_id, end_station_name, end_station_id, end_lat, end_lng
 - 1,298,357 rows with null values were removed
-- 69 rows with ended_at earlier than started_at were removed
+- 69 rows with ended_at being earlier than started_at were removed
 - Added day_of_week, month and ride_length columns
-- 395 rows with ride_length equals to 0 or more than a day were removed
+- 395 rows with ride_length equals to 0 or ride_length more than a day were removed
 
 <a name="analyze"></a>
 ## Analyze
