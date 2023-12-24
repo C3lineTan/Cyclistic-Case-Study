@@ -53,19 +53,19 @@ SQL Query: [Data Analysis](./data-analysis.md)
 Tableau: [Data Visualization](https://public.tableau.com/views/Cyclisticcasestudy_17033263316310/WeekendWeekday?:language=en-GB&:display_count=n&:origin=viz_share_link)
 
 ### Number of riders by month
-![Num of riders by month](https://github.com/C3lineTan/Cyclistic-Case-Study/assets/110513678/7dca84e0-d5ee-488e-a400-1ab31d4f0faa)
+![Num of riders by month](https://github.com/C3lineTan/Cyclistic-Case-Study/assets/110513678/62f9f19a-4759-483f-8770-609a184683f5)
 Number of riders peaked during June to August and is at its lowest during December to February.
 
 ### Types of bikes
-![Type of bikes](https://github.com/C3lineTan/Cyclistic-Case-Study/assets/110513678/568a9bb9-6925-4b20-bf30-d45634cc5997)
+![Type of bikes](https://github.com/C3lineTan/Cyclistic-Case-Study/assets/110513678/26e796bd-c636-4ba4-a89d-abf3177d94d9)
 Classic bike is the most popular bike among both casual and member riders.
 
 ### Number of rides and Average ride length
-![Num and Avg ride length](https://github.com/C3lineTan/Cyclistic-Case-Study/assets/110513678/8915033e-a877-41a5-8fbb-f72f882847ed)
+![Num and Avg ride length](https://github.com/C3lineTan/Cyclistic-Case-Study/assets/110513678/e3059650-1851-4c75-b9d6-25832431eb67)
 Casual riders ride less frequently for longer durations while member riders ride more frequently for shorter durations.
 
 ### Member and casual riders during each day of week
-![Weekend_Weekday](https://github.com/C3lineTan/Cyclistic-Case-Study/assets/110513678/fded3001-b976-42e8-b8b4-baf88fc00201)
+![Weekend_Weekday](https://github.com/C3lineTan/Cyclistic-Case-Study/assets/110513678/cac3337a-3121-431f-bfa1-140a67be8b27)
 Member riders ride mostly on weekdays while casual riders ride mostly on weekends. It may be because member riders ride for commuting purposes while casual riders ride for leisure purposes.
 
 <a name="act"></a>
