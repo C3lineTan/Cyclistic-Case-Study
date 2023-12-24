@@ -12,7 +12,7 @@ Following the steps of the data analysis process: Ask, Prepare, Process, Analyze
 6. [Act](#act)
 
 ## Quick Links
-SQL Queries: [Data Preparation](./data-preparation), [Data Cleaning](./data-cleaning), [Data Analysis](./data-analysis)
+SQL Queries: [Data Preparation](./Data-Preparation), [Data Cleaning](./Data-Cleaning), [Data Analysis](./Data-Analysis)
 
 Tableau: [Data Visualization](https://public.tableau.com/views/Cyclisticcasestudy_17033263316310/WeekendWeekday?:language=en-GB&:display_count=n&:origin=viz_share_link)
 
@@ -29,11 +29,11 @@ Until now, Cyclistic’s marketing strategy relied on building general awareness
 - Data Source: [Divvy tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) under this [license](https://divvybikes.com/data-license-agreement)
 - Data Range: Jan 20222 to Dec 2022 (12 files with naming convention of YYYYMM-divvy-tripdata and each file includes information for one month)
 - Columns in each file: ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, and member_casual
-- [Data Preparation](./data-preparation): 12 csv files obtained from Divvy tripdata are uploaded as tables in the '2022' dataset and combined into 1 table, 'tripdata_2022', in the '2022' dataset, and cleaned using BigQuery due to BigQuery's ability to handle large amounts of data
+- [Data Preparation](./Data-Preparation): 12 csv files obtained from Divvy tripdata are uploaded as tables in the '2022' dataset and combined into 1 table, 'tripdata_2022', in the '2022' dataset, and cleaned using BigQuery due to BigQuery's ability to handle large amounts of data
 
 <a name="process"></a>
 ## Process
-SQL Query: [Data Cleaning](./data-cleaning)
+SQL Query: [Data Cleaning](./Data-Cleaning)
 
 - 5,667,717 rows found
 - Check data type of all columns
@@ -46,7 +46,7 @@ SQL Query: [Data Cleaning](./data-cleaning)
 
 <a name="analyze"></a>
 ## Analyze
-SQL Query: [Data Analysis](./data-analysis) 
+SQL Query: [Data Analysis](./Data-Analysis) 
 
 <a name="share"></a>
 ## Share
