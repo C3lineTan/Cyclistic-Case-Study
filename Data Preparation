@@ -1,0 +1,65 @@
+  -- combining all 12 months data tables from Jan 2022 to Dec 2022 into a single 2022 table
+CREATE TABLE
+  `2022.tripdata_2022` AS
+SELECT
+  *
+FROM (
+  SELECT
+    *
+  FROM
+    `2022.01`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.02`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.03`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.04`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.05`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.06`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.07`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.08`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.09`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.10`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.11`
+  UNION ALL
+  SELECT
+    *
+  FROM
+    `2022.12` );
