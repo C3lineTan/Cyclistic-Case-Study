@@ -1,5 +1,5 @@
   -- combining all 12 months data tables from Jan 2022 to Dec 2022 into a single 2022 table
-CREATE TABLE
+CREATE TABLE IF NOT EXISTS
   `2022.tripdata_2022` AS
 SELECT
   *
