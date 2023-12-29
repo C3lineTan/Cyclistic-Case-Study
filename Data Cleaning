@@ -62,7 +62,7 @@ LIMIT 10;
 
 -- add day of week column for start date
 ALTER TABLE `2022.tripdata_2022`
-ADD COLUMN day_of_week STRING;
+ADD COLUMN IF NOT EXISTS day_of_week STRING;
 UPDATE `2022.tripdata_2022`
 SET day_of_week =
   CASE EXTRACT(DAYOFWEEK FROM started_at) 
@@ -78,7 +78,7 @@ WHERE EXTRACT(DAYOFWEEK FROM started_at) IN (1, 2, 3, 4, 5, 6, 7);
 
 -- add month column for start date
 ALTER TABLE `2022.tripdata_2022`
-ADD COLUMN month STRING;
+ADD COLUMN IF NOT EXISTS month STRING;
 UPDATE `2022.tripdata_2022`
 SET month =
   CASE EXTRACT(MONTH FROM started_at)
@@ -100,7 +100,7 @@ WHERE EXTRACT(MONTH FROM started_at) IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
 -- add ride length
 -- note: ride_length is in seconds
 ALTER TABLE `2022.tripdata_2022`
-ADD COLUMN ride_length INT;
+ADD COLUMN IF NOT EXISTS ride_length INT;
 UPDATE `2022.tripdata_2022`
 SET ride_length = CAST(TIMESTAMP_DIFF(ended_at, started_at, SECOND) AS INT)
 WHERE ended_at IS NOT NULL AND started_at IS NOT NULL;
